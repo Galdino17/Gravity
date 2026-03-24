@@ -1,14 +1,41 @@
 {
   "id": 1,
   "ball": {
+    "type": "ball",
     "x": 11,
     "y": 8
   },
   "goal": {
+    "type": "goal",
     "x": 11,
-    "y": 30,
+    "y": 28,
     "angle": 90
   },
+  "portals": [],
+  "environment": {
+    "wind": {
+      "x": -400,
+      "y": 0
+    }
+  },
+  "spikes": [],
+  "stars": [
+    {
+      "type": "star",
+      "x": 11,
+      "y": 12
+    },
+    {
+      "type": "star",
+      "x": 11,
+      "y": 17
+    },
+    {
+      "type": "star",
+      "x": 11,
+      "y": 22
+    }
+  ],
   "market": {
     "portal": 0
   }

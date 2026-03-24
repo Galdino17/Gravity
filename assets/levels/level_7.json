@@ -73,6 +73,10 @@
         "moveY": false, "angle": 180
       }
     ]
+  ],"stars": [
+    { "type": "star", "x": 11, "y": 10},
+    {"type": "star", "x": 13, "y": 29},
+    {"type": "star", "x": 15,  "y": 12}
   ],
   "goal": {
     "type": "goal",

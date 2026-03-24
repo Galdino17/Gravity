@@ -6,6 +6,23 @@
     "y": 28
   },
   "portals": [],
+  "stars": [
+    {
+      "type": "star",
+      "x": 11,
+      "y": 30
+    },
+    {
+      "type": "star",
+      "x": 11,
+      "y": 32
+    },
+    {
+      "type": "star",
+      "x": 11,
+      "y": 8
+    }
+  ],
   "goal": {
     "type": "goal",
     "x": 11,

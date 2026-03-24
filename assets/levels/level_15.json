@@ -12,11 +12,17 @@
         "moveX": true, "moveY": false, "angle": 90
       },
       {
-        "type": "exit",  "x": 3, "y": 15,
+        "type": "exit",  "x": 3, "y": 11,
         "moveX": true, "moveY": false,"angle": 90
       }
     ]
   ],
+  "stars": [
+    { "type": "star", "x": 17, "y": 13},
+    {"type": "star", "x": 17, "y": 28},
+    {"type": "star", "x": 17,  "y": 22}
+  ],
+
   "goal": {
     "type": "goal",
     "x": 16,

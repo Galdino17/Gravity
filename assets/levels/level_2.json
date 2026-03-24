@@ -16,6 +16,10 @@
       "y": 10,
       "type": "exit", "moveX":true, "moveY":true, "angle": 90
     }]
+  ],"stars": [
+    { "type": "star", "x": 11, "y": 12},
+    {"type": "star", "x": 11, "y": 17 },
+    {"type": "star", "x": 15,  "y": 17}
   ],
   "goal": {
     "x": 15,

@@ -1,0 +1,42 @@
+{
+  "id": 9,
+  "ball": {
+    "type": "ball",
+    "x": 11,
+    "y": 8
+  },
+  "portals": [
+    [
+      {
+        "type": "entry", "x": 11, "y": 25,
+        "moveX": false, "moveY": false, "angle": 90
+      },
+      {
+        "type": "exit",  "x": 3, "y": 15,
+        "moveX": true, "moveY": false,"angle": 90
+      }
+    ]
+  ],
+  "stars": [
+    { "type": "star", "x": 11, "y": 18},
+    {"type": "star", "x": 16, "y": 28},
+    {"type": "star", "x": 16,  "y": 22}
+  ],
+  "goal": {
+    "type": "goal",
+    "x": 16,
+    "y": 32,
+    "angle": 90
+  },
+  "obstacles": [
+       {"type":"spike",
+        "items":[{"x":0, "y": 15, "angle":   0,  "size": 300, "velocity": 2},
+                {"x":10, "y": 20, "angle":   0,  "size": 300, "velocity": 3},
+                {"x":15, "y": 30, "angle":   0,  "size": 300, "velocity": 5}]
+}],
+  "market": {
+    "portal": 1
+  }
+}
+
+

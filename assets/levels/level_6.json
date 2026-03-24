@@ -34,6 +34,10 @@
       "moveX": false,
       "moveY": true, "angle": 0
     }]
+  ],"stars": [
+    { "type": "star", "x": 11, "y": 10},
+    {"type": "star", "x": 18, "y": 29},
+    {"type": "star", "x": 19,  "y": 15}
   ],
   "goal": {
     "type": "goal",

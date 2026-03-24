@@ -43,6 +43,11 @@
       }
     ]
   ],
+  "stars": [
+    { "type": "star", "x": 11, "y": 21},
+    {"type": "star", "x": 2, "y": 12},
+    {"type": "star", "x": 2,  "y": 25}
+  ],
   "goal": {
     "type": "goal",
     "x": 2,
