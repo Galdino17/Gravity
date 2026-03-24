@@ -1,0 +1,26 @@
+{
+  "id": 5,
+  "ball": {
+    "x": 11,
+    "y": 8
+  },
+  "portals": [
+    [{
+      "x": 17,
+      "y": 8,
+      "type": "entry", "moveX":true, "moveY":true, "angle": 90
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "type": "exit", "moveX":true, "moveY":true, "angle": 90
+    }]
+  ],
+  "goal": {
+    "x": 17,
+    "y": 30,
+    "angle": 90
+  },
+
+  "market":{"portal":1  }
+}

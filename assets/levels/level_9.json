@@ -1,0 +1,38 @@
+{
+  "id": 1,
+  "ball": {
+    "type": "ball",
+    "x": 11,
+    "y": 8
+  },
+  "portals": [
+    [
+      {
+        "type": "entry",
+        "x": 11,
+        "y": 25,
+        "moveX": false,
+        "moveY": true,
+        "angle": 90
+      },
+      {
+        "type": "exit",
+        "x": 7,
+        "y": 27,
+        "moveX": true,
+        "moveY": false,
+        "angle": 90
+      }
+    ]
+  ],
+  "goal": {
+    "type": "goal",
+    "x": 17,
+    "y": 30,
+    "angle": 90
+  },
+  "obstacles": [{"type":"wind", "velocity":200}],
+  "market": {
+    "portal": 1
+  }
+}

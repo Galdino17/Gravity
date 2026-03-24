@@ -1,0 +1,32 @@
+{
+  "id": 3,
+  "ball": {
+    "type": "ball",
+    "x": 11,
+    "y": 7
+  },
+  "portals": [
+    [
+      {
+        "type": "entry",
+        "x": 11,
+        "y": 9,
+        "moveX": false,
+        "moveY": true, "angle": 90
+      },
+      {
+        "type": "exit",
+        "x": 16,
+        "y": 18,
+        "moveX": false,
+        "moveY": false, "angle": 270
+      }
+    ]
+  ],
+  "goal": {
+    "type": "goal",
+    "x": 16,
+    "y": 12,
+    "angle": 45
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 8,
+  "ball": {
+    "type": "ball",
+    "x": 11,
+    "y": 28
+  },
+  "portals": [],
+  "goal": {
+    "type": "goal",
+    "x": 11,
+    "y": 10,
+    "angle": 90
+  },
+  "market": {
+    "portal": 1
+  }
+}

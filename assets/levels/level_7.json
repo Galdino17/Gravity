@@ -1,0 +1,86 @@
+{
+  "id": 7,
+  "ball": {
+    "type": "ball",
+    "x": 11,
+    "y": 8
+  },
+  "portals": [
+
+    [
+      {
+        "type": "entry",
+        "x": 18,
+        "y": 11,
+        "moveX": true,
+        "moveY": false, "angle": 90
+      },
+      {
+        "type": "exit",
+        "x": 18,
+        "y": 30,
+        "moveX": false,
+        "moveY": true, "angle": 180
+        
+      }
+    ],
+    [
+      {
+        "type": "entry",
+        "x": 4,
+        "y": 11,
+        "moveX": false,
+        "moveY": true, "angle": 90
+      },
+      {
+        "type": "exit",
+        "x": 4,
+        "y": 30,
+        "moveX": true,
+        "moveY": false, "angle": 270
+      }
+    ],
+    
+    [
+      {
+        "type": "entry",
+        "x": 13,
+        "y": 21,
+        "moveX": false,
+        "moveY": false, "angle": 90
+      },
+      {
+        "type": "exit",
+        "x": 13,
+        "y": 23,
+        "moveX": false,
+        "moveY": false, "angle": 90
+      }
+    ],
+    [
+      {
+        "type": "entry",
+        "x": 15,
+        "y": 22,
+        "moveX": false,
+        "moveY": false, "angle": 0
+      },
+      {
+        "type": "exit",
+        "x": 10,
+        "y": 22,
+        "moveX": false,
+        "moveY": false, "angle": 180
+      }
+    ]
+  ],
+  "goal": {
+    "type": "goal",
+    "x": 13,
+    "y": 22,
+    "angle": 90
+  },
+  "market": {
+    "portal": 1
+  }
+}
