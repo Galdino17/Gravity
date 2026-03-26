@@ -135,7 +135,18 @@ def analytics_summary():
 @app.route('/analytics/dashboard', methods=['GET'])
 def dashboard():
     supabase.rpc('refresh_analytics').execute()
-    response = supabase.table('analytics_summary').select("*").execute()
+    session_id = request.args.get('session_id')
+    client_id = request.args.get('client_id')
+
+    if session_id:
+        response = supabase.table('analytics_by_session').select("*").eq('session_id', session_id).execute()
+
+    elif client_id:
+        response = supabase.table('analytics_by_client').select("*").eq('client_id', client_id).execute()
+
+    else:
+        response = supabase.table('analytics_summary').select("*").execute()
+
     data = response.data[0]["data"]
 
     levels_raw = data.get("levels", {})
@@ -469,6 +480,12 @@ def dashboard():
 <header>
   <h1>&#9655; analytics</h1>
   <span class="tag">LIVE</span>
+
+  <form method="GET" style="margin-bottom:20px;">
+  <input name="session_id" placeholder="Session ID" />
+  <input name="client_id" placeholder="Client ID" />
+  <button type="submit">Filtrar</button>
+</form>
 </header>
 
 <div class="kpi-grid">
