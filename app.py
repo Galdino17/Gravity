@@ -147,6 +147,25 @@ def dashboard():
     else:
         response = supabase.table('analytics_summary').select("*").execute()
 
+    responseSession = supabase.table('analytics_by_session') \
+    .select("session_id") \
+    .execute()
+
+    responseClient = supabase.table('analytics_by_client') \
+        .select("client_id") \
+        .execute()
+
+    sessions = list(set(row['session_id'] for row in responseSession.data))
+    clients = list(set(row['client_id'] for row in responseClient.data))
+
+    session_options = "".join(
+    f'<option value="{s}">{s}</option>' for s in sessions
+    ).join('<select name="session_id" onchange="this.form.submit()">')
+
+    client_options = "".join(
+        f'<option value="{c}">{c}</option>' for c in clients
+    ).join('<select name="client_id" onchange="this.form.submit()">')
+
     data = response.data[0]["data"]
 
     levels_raw = data.get("levels", {})
@@ -481,11 +500,15 @@ def dashboard():
   <h1>&#9655; analytics</h1>
   <span class="tag">LIVE</span>
 
-  <form method="GET" style="margin-bottom:20px;">
-  <input name="session_id" placeholder="Session ID" />
-  <input name="client_id" placeholder="Client ID" />
-  <button type="submit">Filtrar</button>
-</form>
+  <select name="session_id">
+  <option value="">Todas sessões</option>
+  {session_options}
+</select>
+
+<select name="client_id">
+  <option value="">Todos clientes</option>
+  {client_options}
+</select>
 </header>
 
 <div class="kpi-grid">
