@@ -8,8 +8,8 @@
   "portals": [
     [
       {
-        "type": "entry", "x": 11, "y": 15,
-        "moveX": false, "moveY": false, "angle": 90
+        "type": "entry", "x": 11, "y": 11,
+        "moveX": false, "moveY": true, "angle": 90
       },
       {
         "type": "exit",  "x": 3, "y": 25,
@@ -28,7 +28,7 @@
     ]
   ],
   "stars": [
-    { "type": "star", "x": 11, "y": 13},
+    { "type": "star", "x": 11, "y": 10},
     {"type": "star", "x": 11, "y": 28},
     {"type": "star", "x": 11,  "y": 30}
   ],
@@ -41,9 +41,13 @@
   "nGoals":[{"type":"end2", "x":5, "y":22, "angle": 90},
             {"type":"end2", "x":11, "y":22, "angle": 90},
             {"type":"end2", "x":17, "y":22, "angle": 90}],
-  "obstacles": [{"type":"spike",
-               "items":[{"x":8, "y": 27, "angle":   0,  "size": 250, "velocity": 0, "moveX":10},
-                        {"x":8, "y": 21, "angle":   0,  "size": 250, "velocity": 0, "moveX":-10}
+  "obstacles": [{"type":"wind", "velocity":400},
+                {"type":"spike",
+               "items":[{"x":8, "y": 27, "angle":   45,  "size": 250, "velocity": 5, "moveX":0, "moveY": 0},
+                        {"x":14, "y": 27, "angle":   185,  "size": 250, "velocity": -5, "moveX":0, "moveY": 0},
+                        {"x":8, "y": 21, "angle":   0,  "size": 75, "velocity": 0},
+                        {"x":14, "y": 21, "angle":   0,  "size": 75, "velocity": 0}
+                        
                ]}],
   "market": {
     "portal": 1
