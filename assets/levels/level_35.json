@@ -1,0 +1,45 @@
+{
+  "id": 9,
+  "ball": {
+    "type": "ball",
+    "x": 11,
+    "y": 8
+  },
+  "portals": [
+    [
+      {
+        "type": "entry", "x": 11, "y": 14,
+        "moveX": false, "moveY": false, "angle": 90
+      },
+      {
+        "type": "exit",  "x": 5, "y": 22,
+        "moveX": true, "moveY": true,"angle": 90
+      }
+    ]
+  ],
+  "stars": [
+    { "type": "star", "x": 11, "y": 11},
+    {"type": "star", "x": 16, "y": 20},
+    {"type": "star", "x": 24,  "y": 27}
+  ],
+  "goal": {
+    "type": "goal",
+    "x": 11,
+    "y": 33,
+    "angle": 90, "moveY":5, "moveX": 2
+  },
+  "nGoals":[{"type":"end2", "x":5, "y":22, "angle": 90, "moveY":1, "moveX": 7},
+            {"type":"end2", "x":5, "y":22, "angle": 90, "moveY":2, "moveX": 6},
+            {"type":"end2", "x":5, "y":22, "angle": 90, "moveY":3, "moveX": 5},
+            {"type":"end2", "x":5, "y":22, "angle": 90, "moveY":4, "moveX": 4},
+            {"type":"end2", "x":5, "y":22, "angle": 90, "moveY":5, "moveX": 3},
+            {"type":"end2", "x":5, "y":22, "angle": 90, "moveY":6, "moveX": 2},
+            {"type":"end2", "x":5, "y":22, "angle": 90, "moveY":7, "moveX": 1}],
+  "obstacles": [{"type":"ima",
+               "items":[{"x":8, "y": 22, "angle":   0,  "size": 400, "forca": 45, "velocity":0}]}],
+  "market": {
+    "portal": 1
+  }
+}
+
+
